@@ -10,12 +10,15 @@ import { MatInputModule } from '@angular/material/input';
 
 
 import { ResearchComponent } from './research/research.component';
-
+import { MovieListComponent } from './movie-list/movie-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import  {MatListModule} from '@angular/material/list'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ResearchComponent
+    ResearchComponent,
+    MovieListComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,9 @@ import { ResearchComponent } from './research/research.component';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatToolbarModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule,
+    MatListModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
