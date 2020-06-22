@@ -1,13 +1,34 @@
-<p>movie-list works!</p>
+<h2> Recherche de Films</h2>
+    <input (input)="searchtext=$event.target.value" placeholder="Titre" autocomplete="off" minlength="3" maxlength="10">
+    
+    <button mat-icon-button color="primary" aria-label="Search" (click)="search()">
+        <mat-icon>home</mat-icon>
+      </button>
+<!--<mat-list  *ngFor="let movie of movies">
+    <mat-list-item >        
+        <mat-card class="movie-card">
+            <mat-card-header>
+                <mat-card-title> {{ movie.Title | uppercase  }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img mat-card-image src="{{movie.Poster}}" title="{{movie.Title}}">
+                <p>
 
-<mat-list *ngFor="let movie of movies">
-    <mat-list-item>
-            <!--<label> {{ movie.Title }}</label>-->
-            <img src="{{movie.Poster}}" title="{{movie.Title}}" alt="{{movie.Title}}">
+                </p>
+            </mat-card-content>
+        </mat-card>
     </mat-list-item>
-</mat-list>
-<!--<ul *ngFor="let movie of movies">
-    <li> {{ movie.Title }}  {{ movie.Year }} {{ movie.imdbID }} {{ movie.Type }} {{ movie.Poster }}</li>
-    <textarea> imdbID :  {{ movie.imdbID }}</textarea>
-    <img src="{{movie.Poster}}">
-</ul>-->
+</mat-list>-->
+<ul *ngFor="let movie of movies">
+    <mat-card class="movie-card">
+        <mat-card-header>
+            <mat-card-title> {{ movie.Title | uppercase  }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <img mat-card-image src="{{movie.Poster}}" title="{{movie.Title}}">
+            <p>
+
+            </p>
+        </mat-card-content>
+    </mat-card>
+</ul>

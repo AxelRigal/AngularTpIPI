@@ -13,6 +13,8 @@ import { ResearchComponent } from './research/research.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import  {MatListModule} from '@angular/material/list'; 
+import  { MatCardModule } from '@angular/material/card'; 
+import  { MatIconModule } from '@angular/material/icon'; 
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import  {MatListModule} from '@angular/material/list';
     MatToolbarModule,
     MatInputModule,
     HttpClientModule,
-    MatListModule    
+    MatCardModule,
+    MatListModule,
+    MatIconModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

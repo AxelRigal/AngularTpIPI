@@ -16,5 +16,7 @@ export class ResearchComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
+  search(){
+    
+  }
 }
